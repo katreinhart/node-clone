@@ -1,3 +1,94 @@
-h1 {
-  font-family: Helvetica, sans serif;
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', 'Open Sans', Helvetica, sans-serif;
+  margin: 0;
+  padding: 0
+}
+
+header {
+  background-color: #353535;
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  background-color: #353535;
+  height: 150px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  float: left;
+  padding: 0;
+}
+
+nav li {
+  padding-top: 8px;
+  display: inline-block;
+  float: left;
+  width: 50%;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+nav a {
+  color: #ccc;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+.hero-wrapper {
+  background: url('./img/background.jpg');
+  background-size: contain;
+  clear: both;
+}
+
+.hero {
+  margin: 20px;
+  background-color: transparent;
+}
+
+.hero img {
+  width: 100%
+}
+
+.lede {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  padding: 10%;
+}
+
+.lede p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 481px) {
+  nav.top-menu {
+    height: 90px;
+    text-align: center;
+  }
+  nav ul {
+    margin: 20px;
+  }
+  nav li {
+    display: inline;
+    float: none;
+  }
+  nav li:not(:first-child)::before {
+    color: #ccc;
+    content: "| ";
+  }
+  nav a {
+    padding: 8px;
+  }
 }
