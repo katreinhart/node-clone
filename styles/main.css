@@ -11,6 +11,11 @@ body {
   padding: 0
 }
 
+section {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   background-color: #353535;
   text-align: center;
@@ -47,14 +52,17 @@ nav a {
 
 
 .hero-wrapper {
-  background: url('./img/background.jpg');
-  background-size: contain;
+  background-image: url('./img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-color: #BADA55;*/
   clear: both;
 }
 
 .hero {
   margin: 20px;
-  background-color: transparent;
+  background-color:inherit;
 }
 
 .hero img {
@@ -72,13 +80,21 @@ nav a {
   margin-top: 0;
 }
 
+footer {
+  background-color: #353535;
+  color: white;
+}
+
 @media screen and (min-width: 481px) {
+  header {
+    text-align: center;
+    padding-top: 2%;
+  }
   nav.top-menu {
     height: 90px;
-    text-align: center;
   }
   nav ul {
-    margin: 20px;
+    width: 100%;
   }
   nav li {
     display: inline;
@@ -90,5 +106,14 @@ nav a {
   }
   nav a {
     padding: 8px;
+  }
+
+  .hero {
+
+  }
+
+  .hero img {
+    /*margin: 5%;*/
+    max-width: 800px;
   }
 }
