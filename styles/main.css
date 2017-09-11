@@ -11,9 +11,19 @@ body {
   padding: 0
 }
 
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
 section {
   margin: 0;
   padding: 0;
+  text-align: center;
+  font-size: 1.3rem
 }
 
 header {
@@ -50,14 +60,33 @@ nav a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+button h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  margin: 10px;
+}
+
+button p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+}
 
 .hero-wrapper {
   background-image: url('../img/background.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /*background-color: #BADA55;*/
   clear: both;
+}
+
+.hero-wrapper a:hover {
+  background-color: green;
+  margin: 0;
+  padding: 0
 }
 
 .hero {
@@ -65,11 +94,11 @@ nav a {
   padding: 20px;
   background-color:inherit;
   text-align: center;
-  max-width: 80%;
 }
 
 .hero img {
-  width: 100%
+  max-width: 80%;
+
 }
 
 .lede {
@@ -83,7 +112,59 @@ nav a {
   margin-top: 0;
 }
 
+.security {
+  background-color: #EcF4E9;
+  margin: 0 auto;
+  width: 80%;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+a {
+  color: green;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: green;
+  color: white;
+}
+
+.download {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.download-button {
+  background-color: green;
+  border: none;
+  width: 300px;
+  color: white;
+  /*margin: 20px;*/
+  font-weight: 300;
+}
+
+.download-button p {
+  font-size: 1.1rem;
+}
+
+.button-container {
+  margin-bottom: 20px;
+}
+
+.button-footer {
+  font-size: 0.9rem;
+  padding: 5px;
+}
+
+.more, .subscribe {
+  margin: 15px;
+}
+
 footer {
+  clear: both;
   background-color: #353535;
   color: white;
 }
@@ -112,15 +193,24 @@ footer {
   }
 
   .hero-wrapper {
-    min-height: 250px;
+    min-height: 180px;
   }
 
   .hero img {
-    max-width: 800px;
+    max-width: 100%;
+    margin: auto;
   }
 
   .lede {
     padding: 3% 10%;
     font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 578px) {
+
+  .button-container {
+    width: 50%;
+    float: left;
   }
 }
