@@ -140,14 +140,14 @@ a:hover {
 .download-button {
   background-color: green;
   border: none;
-  width: 300px;
+  width: 250px;
   color: white;
   /*margin: 20px;*/
   font-weight: 300;
 }
 
 .download-button p {
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .button-container {
@@ -167,7 +167,18 @@ footer {
   clear: both;
   background-color: #353535;
   color: white;
+  padding: 10px;
 }
+
+footer p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ccc;
+}
+
 
 @media screen and (min-width: 481px) {
   header {
@@ -205,6 +216,8 @@ footer {
     padding: 3% 10%;
     font-size: 1.2rem;
   }
+
+
 }
 
 @media (min-width: 578px) {
@@ -212,5 +225,30 @@ footer {
   .button-container {
     width: 50%;
     float: left;
+  }
+
+}
+
+@media (min-width: 708px) {
+  nav.top-menu {
+    height: 60px;
+  }
+  .button {
+    width: 300px;
+
+  }
+  .footer-logo {
+    float: left;
+    width: 45%;
+    margin: 5px;
+  }
+
+  .footer-links {
+    float: right;
+  }
+
+  .footer-main {
+    clear: both;
+    margin-top: 45px;
   }
 }
